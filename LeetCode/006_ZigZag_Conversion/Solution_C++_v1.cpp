@@ -6,9 +6,9 @@ class Solution {
 public:
     string convert(string s, int numRows) {
         string result = "";
-		// output in one line
-		if(1 == numRows)
-			return s;
+        // output in one line
+        if(1 == numRows)
+            return s;
 		
 		// find the rule: split the string into several sub-strings according to the numRows
         int step = 2 * numRows - 2;  // length of sub-string
@@ -31,9 +31,9 @@ public:
 
 int main(){
     Solution solver = Solution();
-	string str = "PAYPALISHIRING";
-	// string str = "A";
-	cout << solver.convert(str, 14) << endl;
-	
-	return 0;
+    string str = "PAYPALISHIRING";
+    // string str = "A";
+    cout << solver.convert(str, 14) << endl;
+    
+    return 0;
 }
