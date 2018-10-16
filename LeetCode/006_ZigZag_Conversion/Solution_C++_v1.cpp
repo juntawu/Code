@@ -2,8 +2,6 @@
 #include <string>
 using namespace std;
 
-
-
 class Solution {
 public:
     string convert(string s, int numRows) {
@@ -27,13 +25,12 @@ public:
         }
 		
 		return result;
-    }
+	}
 };
 
 
-
 int main(){
-	Solution solver = Solution();
+    Solution solver = Solution();
 	string str = "PAYPALISHIRING";
 	// string str = "A";
 	cout << solver.convert(str, 14) << endl;
